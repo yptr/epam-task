@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Book {
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+    margin: 5px auto;
+    border: 1px solid grey;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.content {
+    width: 65%;
+    display: inline-block;
+}
+
+#text {
+    margin: 22% 42%;
+    width: 70%;
+    height: 100%;   
+}
+
+div#name, div#author, div#year {
+    margin: 7px;
+}
+
+h2, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div#image {
+    width: 35%;  
+    height: 100%;
+    float: left;
+    margin: 5%;
+}
+
+.buttons {
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin: 12% auto;
+}
+
+#edit, #delete {
+    margin: 10% auto;
+    width: 85%;
+    height: 30px;
+}
+
+#addBook {
+    margin: 5px 21.9%;
+    width: 320px;
+    height: 40px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+input#year {
+    width: 6%;
+}
+
+#form-buttons {
+    display: flex;
+    margin-top: 3%;
+    width: 25%;
+    float: left;
+}
+
+#modal {
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.8);
+}
+
+#modal-content {
+	background-color: #fefefe;
+	margin: 5% auto;
+	padding: 20px;
+	border: solid black 1px;
+    width: 60%;
+    overflow: hidden;
 }
